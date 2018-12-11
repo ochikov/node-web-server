@@ -27,6 +27,7 @@ app.use((req, res, next) => {
 	res.render('maintanance.hbs', {
 		pageTitle: 'Maintenance Page'
 	});
+	next();
 });
 
 hbs.registerHelper('getCurrentYear', () => {
